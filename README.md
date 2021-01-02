@@ -49,3 +49,9 @@ It is very easy to implement a web crawler with these python framworks, but the 
 
 1. Scraping using such automation for such a large amount of data could generate a lot of traffic which could overburden the Twitter server. The website has put various measures to avoid that. 
 2. Since I was at the risk of getting my IP blocked for scraping large amounts of data, I needed a way to avoid this. One way of doing this was by using multiple proxies and run the bot parallelly using tools like [proxyscrape.com](http://proxyscrape.com) and [scraperapi.com](http://scraperapi.com). But these tools are mostly paid so I didn't try them any further.
+
+## Task 3 - XML to MongoDB Parsing
+This task has been partially implemented. The python script **xml_to_db.py** requires MongoDB services to be installed on the system. 
+Note : The script has been natively implemented in Windows so it is adviced to run it same OS itself.
+
+Scope of Improvement : While parsing the XML, the package loads the entire file on the RAM while affects performance. This could be improved by using ```iterparse()``` package from elementtree package. Could have surely done that with a little more time.
